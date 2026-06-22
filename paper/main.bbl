@@ -9,6 +9,7 @@
 Chong Gu.
 \newblock \emph{Smoothing Spline {ANOVA} Models}.
 \newblock Springer, 2nd edition, 2013.
+\newblock \doi{10.1007/978-1-4614-5369-7}.
 
 \bibitem[de~Boor(2001)]{deboor2001}
 Carl de~Boor.
@@ -40,6 +41,7 @@ Jacob Bien, Jonathan Taylor, and Robert Tibshirani.
 Simon~N. Wood.
 \newblock \emph{Generalized Additive Models: An Introduction with {R}}.
 \newblock Chapman and Hall/CRC, 2nd edition, 2017.
+\newblock \doi{10.1201/9781315370279}.
 
 \bibitem[Wood(2003)]{wood2003}
 Simon~N. Wood.
@@ -60,12 +62,14 @@ Chun-Hao Chang, Rich Caruana, and Anna Goldenberg.
 \newblock {NODE-GAM}: Neural generalized additive model for interpretable deep
   learning.
 \newblock In \emph{International Conference on Learning Representations}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2106.01613}.
 
 \bibitem[Wahba(1990)]{wahba1990}
 Grace Wahba.
 \newblock \emph{Spline Models for Observational Data}, volume~59 of
   \emph{CBMS-NSF Regional Conference Series in Applied Mathematics}.
 \newblock SIAM, 1990.
+\newblock \doi{10.1137/1.9781611970128}.
 
 \bibitem[Allen(1974)]{allen1974}
 David~M. Allen.
@@ -143,6 +147,8 @@ Allan~H. Murphy.
   to the correlation coefficient.
 \newblock \emph{Monthly Weather Review}, 116\penalty0 (12):\penalty0
   2417--2424, 1988.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/mwre/116/12/1520-0493_1988_116_2417_ssbotm_2_0_co_2.xml}.
 
 \bibitem[Serv{\'e}n \& Brummitt(2018)Serv{\'e}n and Brummitt]{serven2018pygam}
 Daniel Serv{\'e}n and Charlie Brummitt.
@@ -175,6 +181,7 @@ Wolfgang H{\"a}rdle, Peter Hall, and James~S. Marron.
 Janez Dem\v{s}ar.
 \newblock Statistical comparisons of classifiers over multiple data sets.
 \newblock \emph{Journal of Machine Learning Research}, 7:\penalty0 1--30, 2006.
+\newblock URL \url{https://jmlr.org/papers/v7/demsar06a.html}.
 
 \bibitem[Mallows(1973)]{mallows1973}
 Colin~L. Mallows.
@@ -195,6 +202,7 @@ Stefan Falkner, Aaron Klein, and Frank Hutter.
 \newblock In \emph{Proceedings of the 35th International Conference on Machine
   Learning}, volume~80 of \emph{Proceedings of Machine Learning Research}, pp.\
    1437--1446. PMLR, 2018.
+\newblock URL \url{https://proceedings.mlr.press/v80/falkner18a.html}.
 
 \bibitem[Agarwal et~al.(2021)Agarwal, Melnick, Frosst, Zhang, Lengerich,
   Caruana, and Hinton]{agarwal2021nam}
@@ -204,6 +212,7 @@ Rishabh Agarwal, Levi Melnick, Nicholas Frosst, Xuezhou Zhang, Ben Lengerich,
   nets.
 \newblock In \emph{Advances in Neural Information Processing Systems},
   volume~34, 2021.
+\newblock URL \url{https://arxiv.org/abs/2004.13912}.
 
 \bibitem[Melkman \& Micchelli(1978)Melkman and Micchelli]{melkman1978}
 Avraham~A. Melkman and Charles~A. Micchelli.
@@ -239,6 +248,7 @@ James Bergstra and Yoshua Bengio.
 \newblock Random search for hyper-parameter optimization.
 \newblock \emph{Journal of Machine Learning Research}, 13:\penalty0 281--305,
   2012.
+\newblock URL \url{https://jmlr.org/papers/v13/bergstra12a.html}.
 
 \bibitem[Gijsbers et~al.(2024)Gijsbers, Bueno, Coors, LeDell, Poirier, Thomas,
   Bischl, and Vanschoren]{gijsbers2024amlb}
@@ -247,6 +257,7 @@ Pieter Gijsbers, Marcos L.~P. Bueno, Stefan Coors, Erin LeDell, S{\'e}bastien
 \newblock {AMLB}: an {AutoML} benchmark.
 \newblock \emph{Journal of Machine Learning Research}, 25\penalty0
   (101):\penalty0 1--65, 2024.
+\newblock URL \url{https://jmlr.org/papers/v25/22-0493.html}.
 
 \bibitem[Hoffmann et~al.(2022)Hoffmann, Borgeaud, Mensch, Buchatskaya, Cai,
   Rutherford, de~Las~Casas, Hendricks, Welbl, Clark, et~al.]{hoffmann2022}
@@ -255,6 +266,7 @@ Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor
   Welbl, Aidan Clark, et~al.
 \newblock Training compute-optimal large language models.
 \newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+\newblock URL \url{https://arxiv.org/abs/2203.15556}.
 
 \bibitem[Friedman(1991)]{friedman1991}
 Jerome~H. Friedman.
@@ -275,6 +287,7 @@ Peter Radchenko and Gareth~M. James.
 Larry~L. Schumaker.
 \newblock \emph{Spline Functions: Basic Theory}.
 \newblock Cambridge University Press, 3rd edition, 2007.
+\newblock \doi{10.1017/CBO9780511618994}.
 
 \bibitem[Ravikumar et~al.(2009)Ravikumar, Lafferty, Liu, and
   Wasserman]{ravikumar2009}
@@ -290,6 +303,7 @@ L{\'e}o Grinsztajn, Edouard Oyallon, and Ga{\"e}l Varoquaux.
 \newblock Why do tree-based models still outperform deep learning on typical
   tabular data?
 \newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+\newblock URL \url{https://arxiv.org/abs/2207.08815}.
 
 \bibitem[Kolmogorov(1936)]{kolmogorov1936}
 Andrey~N. Kolmogorov.
