@@ -1159,12 +1159,13 @@ def fig_real_data_memory():
     """Per-cell peak resident-set size on the real-world benchmark.
 
     Reads the per-cell ``rss_peak_mb`` column of ``real_data.csv`` and
-    plots two panels: (a) the empirical CDF of cell peak RSS aggregated
-    by method family, with the soft per-cell cap drawn as a vertical
-    reference line; (b) the top-five (method, dataset) RSS offenders as
-    a horizontal bar chart. The figure documents that steady-state
-    per-worker RSS stays inside the cap for every family, with a small
-    long tail of legitimately heavy outliers on the largest datasets.
+    draws one row per method: a line from the method's median to its
+    maximum per-cell peak RSS across all datasets (open marker at the
+    median, filled marker at the maximum), sorted by the maximum and
+    colored by family with the soft per-cell cap as a vertical reference.
+    Every method's typical cell is small; only the classical full-grid
+    spline selectors carry a tail past the cap on the highest-dimension
+    datasets, while the closed-form selector stays tight and low.
     """
     if not _have_real_data():
         return
@@ -1180,60 +1181,41 @@ def fig_real_data_memory():
         return
     cap_mb = float(os.environ.get('KORE_CELL_RSS_CAP_MB', 8000.0))
 
-    fig = plt.figure(figsize=(COL + 0.4, COL / 2.2))
-    gs = fig.add_gridspec(1, 2, width_ratios=[1.0, 1.15], wspace=0.55)
-    ax_a = fig.add_subplot(gs[0, 0])
-    ax_b = fig.add_subplot(gs[0, 1])
+    stat = (mem.groupby('method')['rss_peak_mb']
+               .agg(med='median', mx='max')
+               .sort_values('mx'))          # ascending -> largest at the top
+    methods = stat.index.tolist()
+    y = np.arange(len(methods))
 
-    # Carve KORE out of the spline family so the closed-form selector is
-    # not confounded with the classical full-grid spline criteria, which
-    # have very different per-cell RSS profiles.
-    is_kore = mem['method'] == 'kore'
-    fams_other = ['spline', 'tree', 'kernel', 'neighbors', 'neural', 'linear']
-    series = [('kore', mem.loc[is_kore, 'rss_peak_mb'].to_numpy())]
-    for fam in fams_other:
-        sub = mem.loc[(~is_kore) & (mem['family'] == fam), 'rss_peak_mb'].to_numpy()
-        series.append((fam, sub))
-    for fam, sub in series:
-        if sub.size == 0:
-            continue
-        sub_sorted = np.sort(sub)
-        cdf = np.arange(1, len(sub_sorted) + 1) / len(sub_sorted)
-        color = FAMILY_COLORS.get(fam, '#888888')
-        ax_a.plot(sub_sorted, cdf, lw=1.4, color=color, label=fam, zorder=3)
-    ax_a.axvline(cap_mb, lw=0.7, ls='--', color='black', alpha=0.55, zorder=2)
-    ax_a.text(cap_mb * 1.10, 0.55, f'{cap_mb:.0f} MiB cap', ha='left',
-              va='center', fontsize=6.6, color='#444444', rotation=90)
-    ax_a.set_xscale('log')
-    ax_a.set_xlabel(r'per-cell peak RSS  (MiB, log)', fontsize=8.0)
-    ax_a.set_ylabel(r'empirical CDF', fontsize=8.0)
-    ax_a.set_ylim(0, 1.02)
-    ax_a.grid(True, which='both', alpha=0.35)
-    ax_a.legend(frameon=False, fontsize=6.4,
-                loc='upper center', bbox_to_anchor=(0.5, -0.18),
-                ncol=4, handletextpad=0.4, handlelength=1.4,
-                columnspacing=1.1)
-    despine(ax_a)
-    panel_label(ax_a, 'a', 'distribution by family')
+    fig, ax = plt.subplots(figsize=(COL, 0.27 * len(methods) + 0.9))
+    for i, meth in enumerate(methods):
+        med = float(stat.loc[meth, 'med'])
+        mx = float(stat.loc[meth, 'mx'])
+        kore = meth == 'kore'
+        color = FAMILY_COLORS.get('kore' if kore else _method_family(meth), '#888888')
+        ax.plot([med, mx], [i, i], color=color, lw=3.0 if kore else 1.8,
+                alpha=0.9, solid_capstyle='round', zorder=5 if kore else 3)
+        ax.scatter([mx], [i], s=40 if kore else 26, color=color,
+                   edgecolor='white', linewidth=0.6, zorder=6 if kore else 4)
+        ax.scatter([med], [i], s=15, facecolor='white', edgecolor=color,
+                   linewidth=1.0, zorder=6 if kore else 4)
 
-    top = (mem.groupby(['method', 'dataset'])['rss_peak_mb']
-              .max().sort_values(ascending=False).head(8).reset_index())
-    labels = [f"{METHOD_LABEL.get(m, m)} on {ds}"
-              for m, ds in zip(top['method'], top['dataset'])]
-    colors = [FAMILY_COLORS.get(_method_family(m), '#888888')
-              for m in top['method']]
-    y = np.arange(len(top))
-    ax_b.barh(y, top['rss_peak_mb'].to_numpy(), height=0.62,
-              color=colors, edgecolor='white', lw=0.4, zorder=3)
-    ax_b.axvline(cap_mb, lw=0.7, ls='--', color='black', alpha=0.55, zorder=2)
-    ax_b.set_xscale('log')
-    ax_b.set_yticks(y)
-    ax_b.set_yticklabels(labels, fontsize=6.8)
-    ax_b.invert_yaxis()
-    ax_b.set_xlabel(r'peak RSS  (MiB, log)', fontsize=8.0)
-    ax_b.grid(True, axis='x', which='both', alpha=0.35)
-    despine(ax_b)
-    panel_label(ax_b, 'b', 'top RSS offenders')
+    ax.axvline(cap_mb, lw=0.8, ls='--', color='black', alpha=0.6, zorder=2)
+    ax.text(cap_mb * 1.07, len(methods) - 0.6, '8 GiB cap', rotation=90,
+            va='top', ha='left', fontsize=7.0, color='#444444')
+    ax.set_xscale('log')
+    ax.set_yticks(y)
+    yticklabels = ax.set_yticklabels([METHOD_LABEL.get(m, m) for m in methods],
+                                     fontsize=7.4)
+    for tick, meth in zip(yticklabels, methods):
+        if meth == 'kore':
+            tick.set_fontweight('bold')
+    ax.set_ylim(-0.6, len(methods) - 0.4)
+    ax.set_xlim(stat['med'].min() * 0.8, stat['mx'].max() * 1.7)
+    ax.set_xlabel(r'per-cell peak RSS across datasets, median to maximum  (MiB, log)',
+                  fontsize=8.0)
+    ax.grid(True, axis='x', which='major', alpha=0.3, zorder=0)
+    despine(ax)
 
     save(fig, 'fig_real_data_memory')
 

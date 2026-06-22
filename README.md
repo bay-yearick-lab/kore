@@ -54,13 +54,20 @@ KORE is compared against **five baselines** that sweep the classical selection l
 KORE matches the accuracy ceiling set by the best classical criterion and delivers roughly 2.5x additional fit savings on top. A **degree ablation** at k in {2, 3, 5} further confirms that the closed-form plug-in resolution inherits the exact scaling exponent predicted by classical B-spline theory (`G_dagger ~ rho^(1/(2*beta+1))` with beta = k+1), not just the cubic case.
 
 <p align="center">
-  <img src="paper/figures/fig_frontier_cost.png" width="430">
-  <img src="paper/figures/fig_frontier_summary.png" width="265">
+  <img src="paper/figures/fig_benchmarks.png" width="820">
 </p>
 
 ## Real-world benchmark
 
 A separate, conventions-driven validation pits KORE against twenty other tabular-regression baselines on the OpenML-CTR23 suite (Fischer et al. 2023) augmented with one additional UCI classic. The roster covers four linear baselines (OLS, RidgeCV, LassoCV, ElasticNetCV), the spline family (KORE, exhaustive CV, GCV, Mallows Cp, AIC, BIC, pyGAM), six tuned tree ensembles (RandomForest, ExtraTrees, HistGradientBoosting, XGBoost, LightGBM, CatBoost), two kernel methods (SVR-RBF, KernelRidge-RBF), KNN, and a small MLP. Hyperparameter search ranges for the tunable methods are lifted verbatim from Grinsztajn, Oyallon, Varoquaux 2022 NeurIPS Appendix B, with Optuna performing 20-trial Bayesian search and a 3-fold inner CV per trial. Results are reported as a Pareto frontier on `(geometric-mean RMSE vs KORE, total fit time across the suite)`, a per-dataset forest plot, and a paired Wilcoxon signed-rank significance test with Holm-Bonferroni correction. The experiment driver and figure generators are wired through `code/kore/experiments.py` and `code/kore/figures.py`; trigger the run with `uv run python -m kore.experiments real_data` after `uv sync --extra benchmark`.
+
+<p align="center">
+  <img src="paper/figures/fig_real_data_pareto.png" width="820">
+</p>
+
+<p align="center">
+  <em>KORE sits at the efficiency-accuracy elbow: the tuned boosters and the neural net buy a small relative-RMSE gain at two to three orders of magnitude more fit time, and the spline-grid selectors sit strictly above and to the right because they search the grid KORE solves in closed form.</em>
+</p>
 
 ## Quick start
 
