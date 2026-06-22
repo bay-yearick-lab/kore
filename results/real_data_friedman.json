@@ -1,0 +1,33 @@
+{
+  "cd": 7.381770333527615,
+  "cd_alpha": 0.05,
+  "dropped_methods": [],
+  "friedman_p": 6.563130589565699e-42,
+  "friedman_stat": 251.19333029159242,
+  "k_methods": 21,
+  "mean_ranks": {
+    "aic_spline": 11.847222222222221,
+    "bic_spline": 9.430555555555555,
+    "catboost": 14.61111111111111,
+    "cp_spline": 11.972222222222221,
+    "cv_spline": 14.277777777777779,
+    "elasticnet_cv": 14.958333333333334,
+    "extra_trees": 10.25,
+    "gcv_spline": 10.86111111111111,
+    "hist_gbm": 7.805555555555555,
+    "kernel_ridge_rbf": 5.319444444444445,
+    "knn": 7.527777777777778,
+    "kore": 4.305555555555555,
+    "lasso_cv": 14.11111111111111,
+    "lightgbm": 9.055555555555555,
+    "linear": 17.694444444444443,
+    "mlp": 12.76388888888889,
+    "pygam": 8.13888888888889,
+    "random_forest": 12.097222222222221,
+    "ridge_cv": 14.875,
+    "svr_rbf": 9.291666666666666,
+    "xgboost": 9.805555555555555
+  },
+  "n_datasets": 36,
+  "score_metric": "cnl_median (max(0, max(0, r2_test) - max(0, r2_ols)) / (1 + fit_time_s), alpha=1)"
+}

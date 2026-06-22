@@ -1,0 +1,5 @@
+stage,n_cells_dispatched,n_jobs,backend,max_tasks_per_child,n_completed,n_sentineled,wall_time_s,ts_start,ts_end,driver_rss_start_mb,driver_rss_end_mb,cgroup_free_start_mb,cgroup_free_end_mb,exception_class,exception_message
+light,95,200,loky,32,0,95,130.14949420700032,2026-05-14T19:31:22,2026-05-14T19:33:32,420.7109375,291.6015625,2788035.60546875,2788370.02734375,TerminatedWorkerError,"A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {SIGKILL(-9)}
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled."

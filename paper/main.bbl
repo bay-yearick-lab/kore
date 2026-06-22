@@ -1,0 +1,299 @@
+\begin{thebibliography}{43}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gu(2013)]{gu2013}
+Chong Gu.
+\newblock \emph{Smoothing Spline {ANOVA} Models}.
+\newblock Springer, 2nd edition, 2013.
+
+\bibitem[de~Boor(2001)]{deboor2001}
+Carl de~Boor.
+\newblock \emph{A Practical Guide to Splines}, volume~27 of \emph{Applied
+  Mathematical Sciences}.
+\newblock Springer, revised edition, 2001.
+
+\bibitem[Lin \& Zhang(2006)Lin and Zhang]{lin2006cosso}
+Yi~Lin and Hao~Helen Zhang.
+\newblock Component selection and smoothing in multivariate nonparametric
+  regression.
+\newblock \emph{The Annals of Statistics}, 34\penalty0 (5):\penalty0
+  2272--2297, 2006.
+\newblock \doi{10.1214/009053606000000722}.
+
+\bibitem[Bay \& Yearick(2024)Bay and Yearick]{bay2024generalization}
+Yong~Yi Bay and Kathleen~A. Yearick.
+\newblock Machine learning vs deep learning: The generalization problem.
+\newblock \emph{arXiv preprint arXiv:2403.01621}, 2024.
+
+\bibitem[Bien et~al.(2013)Bien, Taylor, and Tibshirani]{bien2013}
+Jacob Bien, Jonathan Taylor, and Robert Tibshirani.
+\newblock A lasso for hierarchical interactions.
+\newblock \emph{The Annals of Statistics}, 41\penalty0 (3):\penalty0
+  1111--1141, 2013.
+\newblock \doi{10.1214/13-AOS1096}.
+
+\bibitem[Wood(2017)]{wood2017}
+Simon~N. Wood.
+\newblock \emph{Generalized Additive Models: An Introduction with {R}}.
+\newblock Chapman and Hall/CRC, 2nd edition, 2017.
+
+\bibitem[Wood(2003)]{wood2003}
+Simon~N. Wood.
+\newblock Thin plate regression splines.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  65\penalty0 (1):\penalty0 95--114, 2003.
+\newblock \doi{10.1111/1467-9868.00374}.
+
+\bibitem[Golub et~al.(1979)Golub, Heath, and Wahba]{golub1979}
+Gene~H. Golub, Michael Heath, and Grace Wahba.
+\newblock Generalized cross-validation as a method for choosing a good ridge
+  parameter.
+\newblock \emph{Technometrics}, 21\penalty0 (2):\penalty0 215--223, 1979.
+\newblock \doi{10.1080/00401706.1979.10489751}.
+
+\bibitem[Chang et~al.(2022)Chang, Caruana, and Goldenberg]{chang2022nodegam}
+Chun-Hao Chang, Rich Caruana, and Anna Goldenberg.
+\newblock {NODE-GAM}: Neural generalized additive model for interpretable deep
+  learning.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+
+\bibitem[Wahba(1990)]{wahba1990}
+Grace Wahba.
+\newblock \emph{Spline Models for Observational Data}, volume~59 of
+  \emph{CBMS-NSF Regional Conference Series in Applied Mathematics}.
+\newblock SIAM, 1990.
+
+\bibitem[Allen(1974)]{allen1974}
+David~M. Allen.
+\newblock The relationship between variable selection and data augmentation and
+  a method for prediction.
+\newblock \emph{Technometrics}, 16\penalty0 (1):\penalty0 125--127, 1974.
+\newblock \doi{10.1080/00401706.1974.10489157}.
+
+\bibitem[Stone(1974)]{stone1974}
+Mervyn Stone.
+\newblock Cross-validatory choice and assessment of statistical predictions.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  36\penalty0 (2):\penalty0 111--147, 1974.
+\newblock \doi{10.1111/j.2517-6161.1974.tb00994.x}.
+
+\bibitem[Stone(1982)]{stone1982}
+Charles~J. Stone.
+\newblock Optimal global rates of convergence for nonparametric regression.
+\newblock \emph{The Annals of Statistics}, 10\penalty0 (4):\penalty0
+  1040--1053, 1982.
+\newblock \doi{10.1214/aos/1176345969}.
+
+\bibitem[Stone(1985)]{stone1985}
+Charles~J. Stone.
+\newblock Additive regression and other nonparametric models.
+\newblock \emph{The Annals of Statistics}, 13\penalty0 (2):\penalty0 689--705,
+  1985.
+\newblock \doi{10.1214/aos/1176349548}.
+
+\bibitem[Huang(1998)]{huang1998}
+Jianhua~Z. Huang.
+\newblock Projection estimation in multiple regression with application to
+  functional {ANOVA} models.
+\newblock \emph{The Annals of Statistics}, 26\penalty0 (1):\penalty0 242--272,
+  1998.
+\newblock \doi{10.1214/aos/1030563984}.
+
+\bibitem[Marra \& Wood(2011)Marra and Wood]{marra2011}
+Giampiero Marra and Simon~N. Wood.
+\newblock Practical variable selection for generalized additive models.
+\newblock \emph{Computational Statistics and Data Analysis}, 55\penalty0
+  (7):\penalty0 2372--2387, 2011.
+\newblock \doi{10.1016/j.csda.2011.02.004}.
+
+\bibitem[Eilers \& Marx(1996)Eilers and Marx]{eilers1996}
+Paul H.~C. Eilers and Brian~D. Marx.
+\newblock Flexible smoothing with {B}-splines and penalties.
+\newblock \emph{Statistical Science}, 11\penalty0 (2):\penalty0 89--121, 1996.
+\newblock \doi{10.1214/ss/1038425655}.
+
+\bibitem[Pinkus(1985)]{pinkus1985}
+Allan Pinkus.
+\newblock \emph{n-Widths in Approximation Theory}.
+\newblock Ergebnisse der Mathematik und ihrer Grenzgebiete. Springer, 1985.
+\newblock \doi{10.1007/978-3-642-69894-1}.
+
+\bibitem[Craven \& Wahba(1979)Craven and Wahba]{craven1979}
+Peter Craven and Grace Wahba.
+\newblock Smoothing noisy data with spline functions: Estimating the correct
+  degree of smoothing by the method of generalized cross-validation.
+\newblock \emph{Numerische Mathematik}, 31\penalty0 (4):\penalty0 377--403,
+  1979.
+\newblock \doi{10.1007/BF01404567}.
+
+\bibitem[Kaplan et~al.(2020)Kaplan, McCandlish, Henighan, Brown, Chess, Child,
+  Gray, Radford, Wu, and Amodei]{kaplan2020}
+Jared Kaplan, Sam McCandlish, Tom Henighan, Tom~B. Brown, Benjamin Chess, Rewon
+  Child, Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei.
+\newblock Scaling laws for neural language models.
+\newblock \emph{arXiv preprint arXiv:2001.08361}, 2020.
+
+\bibitem[Murphy(1988)]{murphy1988}
+Allan~H. Murphy.
+\newblock Skill scores based on the mean square error and their relationships
+  to the correlation coefficient.
+\newblock \emph{Monthly Weather Review}, 116\penalty0 (12):\penalty0
+  2417--2424, 1988.
+
+\bibitem[Serv{\'e}n \& Brummitt(2018)Serv{\'e}n and Brummitt]{serven2018pygam}
+Daniel Serv{\'e}n and Charlie Brummitt.
+\newblock pygam: Generalized additive models in {Python}.
+\newblock \emph{Zenodo}, 2018.
+\newblock \doi{10.5281/zenodo.1208723}.
+
+\bibitem[Hastie \& Tibshirani(1990)Hastie and Tibshirani]{hastie1990}
+Trevor~J. Hastie and Robert~J. Tibshirani.
+\newblock \emph{Generalized Additive Models}.
+\newblock Chapman and Hall, 1990.
+
+\bibitem[Akaike(1974)]{akaike1974}
+Hirotugu Akaike.
+\newblock A new look at the statistical model identification.
+\newblock \emph{IEEE Transactions on Automatic Control}, 19\penalty0
+  (6):\penalty0 716--723, 1974.
+\newblock \doi{10.1109/TAC.1974.1100705}.
+
+\bibitem[H{\"a}rdle et~al.(1988)H{\"a}rdle, Hall, and
+  Marron]{hardle1988consistent}
+Wolfgang H{\"a}rdle, Peter Hall, and James~S. Marron.
+\newblock How far are automatically chosen regression smoothing parameters from
+  their optimum?
+\newblock \emph{Journal of the American Statistical Association}, 83\penalty0
+  (401):\penalty0 86--95, 1988.
+\newblock \doi{10.1080/01621459.1988.10478568}.
+
+\bibitem[Dem\v{s}ar(2006)]{demsar2006}
+Janez Dem\v{s}ar.
+\newblock Statistical comparisons of classifiers over multiple data sets.
+\newblock \emph{Journal of Machine Learning Research}, 7:\penalty0 1--30, 2006.
+
+\bibitem[Mallows(1973)]{mallows1973}
+Colin~L. Mallows.
+\newblock Some comments on {$C_P$}.
+\newblock \emph{Technometrics}, 15\penalty0 (4):\penalty0 661--675, 1973.
+\newblock \doi{10.1080/00401706.1973.10489103}.
+
+\bibitem[Schwarz(1978)]{schwarz1978}
+Gideon Schwarz.
+\newblock Estimating the dimension of a model.
+\newblock \emph{The Annals of Statistics}, 6\penalty0 (2):\penalty0 461--464,
+  1978.
+\newblock \doi{10.1214/aos/1176344136}.
+
+\bibitem[Falkner et~al.(2018)Falkner, Klein, and Hutter]{falkner2018bohb}
+Stefan Falkner, Aaron Klein, and Frank Hutter.
+\newblock {BOHB}: Robust and efficient hyperparameter optimization at scale.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine
+  Learning}, 2018.
+
+\bibitem[Agarwal et~al.(2021)Agarwal, Melnick, Frosst, Zhang, Lengerich,
+  Caruana, and Hinton]{agarwal2021nam}
+Rishabh Agarwal, Levi Melnick, Nicholas Frosst, Xuezhou Zhang, Ben Lengerich,
+  Rich Caruana, and Geoffrey~E. Hinton.
+\newblock Neural additive models: Interpretable machine learning with neural
+  nets.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~34, 2021.
+
+\bibitem[Melkman \& Micchelli(1978)Melkman and Micchelli]{melkman1978}
+Avraham~A. Melkman and Charles~A. Micchelli.
+\newblock Spline spaces are optimal for {$L^2$} $n$-width.
+\newblock \emph{Illinois Journal of Mathematics}, 22\penalty0 (4):\penalty0
+  541--564, 1978.
+\newblock \doi{10.1215/ijm/1256048466}.
+
+\bibitem[Fischer et~al.(2023)Fischer, Feurer, and Bischl]{fischer2023openmlctr}
+Sebastian~Felix Fischer, Matthias Feurer, and Bernd Bischl.
+\newblock {OpenML-CTR23}: A curated tabular regression benchmarking suite.
+\newblock In \emph{AutoML Conference 2023 (Workshop Track)}, 2023.
+\newblock URL \url{https://openreview.net/forum?id=HebAOoMm94}.
+
+\bibitem[Erickson et~al.(2020)Erickson, Mueller, Shirkov, Zhang, Larroy, Li,
+  and Smola]{erickson2020autogluon}
+Nick Erickson, Jonas Mueller, Alexander Shirkov, Hang Zhang, Pedro Larroy,
+  Mu~Li, and Alexander Smola.
+\newblock {AutoGluon-Tabular}: Robust and accurate {AutoML} for structured
+  data.
+\newblock \emph{arXiv preprint arXiv:2003.06505}, 2020.
+
+\bibitem[T{\"u}fek\c{c}i(2014)]{tufekci2014}
+P{\i}nar T{\"u}fek\c{c}i.
+\newblock Prediction of full load electrical power output of a base load
+  operated combined cycle power plant using machine learning methods.
+\newblock \emph{International Journal of Electrical Power and Energy Systems},
+  60:\penalty0 126--140, 2014.
+
+\bibitem[Bergstra \& Bengio(2012)Bergstra and Bengio]{bergstra2012}
+James Bergstra and Yoshua Bengio.
+\newblock Random search for hyper-parameter optimization.
+\newblock \emph{Journal of Machine Learning Research}, 13:\penalty0 281--305,
+  2012.
+
+\bibitem[Gijsbers et~al.(2024)Gijsbers, Bueno, Coors, LeDell, Poirier, Thomas,
+  Bischl, and Vanschoren]{gijsbers2024amlb}
+Pieter Gijsbers, Marcos L.~P. Bueno, Stefan Coors, Erin LeDell, S{\'e}bastien
+  Poirier, Janek Thomas, Bernd Bischl, and Joaquin Vanschoren.
+\newblock {AMLB}: an {AutoML} benchmark.
+\newblock \emph{Journal of Machine Learning Research}, 25\penalty0
+  (101):\penalty0 1--65, 2024.
+
+\bibitem[Hoffmann et~al.(2022)Hoffmann, Borgeaud, Mensch, Buchatskaya, Cai,
+  Rutherford, de~Las~Casas, Hendricks, Welbl, Clark, et~al.]{hoffmann2022}
+Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor
+  Cai, Eliza Rutherford, Diego de~Las~Casas, Lisa~Anne Hendricks, Johannes
+  Welbl, Aidan Clark, et~al.
+\newblock Training compute-optimal large language models.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+
+\bibitem[Friedman(1991)]{friedman1991}
+Jerome~H. Friedman.
+\newblock Multivariate adaptive regression splines.
+\newblock \emph{The Annals of Statistics}, 19\penalty0 (1):\penalty0 1--67,
+  1991.
+\newblock \doi{10.1214/aos/1176347963}.
+
+\bibitem[Radchenko \& James(2010)Radchenko and James]{radchenko2010}
+Peter Radchenko and Gareth~M. James.
+\newblock Variable selection using adaptive nonlinear interaction structures in
+  high dimensions.
+\newblock \emph{Journal of the American Statistical Association}, 105\penalty0
+  (492):\penalty0 1541--1553, 2010.
+\newblock \doi{10.1198/jasa.2010.tm10130}.
+
+\bibitem[Schumaker(2007)]{schumaker2007}
+Larry~L. Schumaker.
+\newblock \emph{Spline Functions: Basic Theory}.
+\newblock Cambridge University Press, 3rd edition, 2007.
+
+\bibitem[Ravikumar et~al.(2009)Ravikumar, Lafferty, Liu, and
+  Wasserman]{ravikumar2009}
+Pradeep Ravikumar, John Lafferty, Han Liu, and Larry Wasserman.
+\newblock Sparse additive models.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  71\penalty0 (5):\penalty0 1009--1030, 2009.
+\newblock \doi{10.1111/j.1467-9868.2009.00718.x}.
+
+\bibitem[Grinsztajn et~al.(2022)Grinsztajn, Oyallon, and
+  Varoquaux]{grinsztajn2022tree}
+L{\'e}o Grinsztajn, Edouard Oyallon, and Ga{\"e}l Varoquaux.
+\newblock Why do tree-based models still outperform deep learning on tabular
+  data?
+\newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+
+\bibitem[Kolmogorov(1936)]{kolmogorov1936}
+Andrey~N. Kolmogorov.
+\newblock {\"U}ber die beste ann{\"a}herung von funktionen einer gegebenen
+  funktionenklasse.
+\newblock \emph{Annals of Mathematics}, 37\penalty0 (1):\penalty0 107--110,
+  1936.
+
+\end{thebibliography}
