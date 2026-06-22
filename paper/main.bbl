@@ -78,7 +78,7 @@ David~M. Allen.
 Mervyn Stone.
 \newblock Cross-validatory choice and assessment of statistical predictions.
 \newblock \emph{Journal of the Royal Statistical Society: Series B},
-  36\penalty0 (2):\penalty0 111--147, 1974.
+  36\penalty0 (2):\penalty0 111--133, 1974.
 \newblock \doi{10.1111/j.2517-6161.1974.tb00994.x}.
 
 \bibitem[Stone(1982)]{stone1982}
@@ -193,7 +193,8 @@ Gideon Schwarz.
 Stefan Falkner, Aaron Klein, and Frank Hutter.
 \newblock {BOHB}: Robust and efficient hyperparameter optimization at scale.
 \newblock In \emph{Proceedings of the 35th International Conference on Machine
-  Learning}, 2018.
+  Learning}, volume~80 of \emph{Proceedings of Machine Learning Research}, pp.\
+   1437--1446. PMLR, 2018.
 
 \bibitem[Agarwal et~al.(2021)Agarwal, Melnick, Frosst, Zhang, Lengerich,
   Caruana, and Hinton]{agarwal2021nam}
@@ -229,8 +230,9 @@ Nick Erickson, Jonas Mueller, Alexander Shirkov, Hang Zhang, Pedro Larroy,
 P{\i}nar T{\"u}fek\c{c}i.
 \newblock Prediction of full load electrical power output of a base load
   operated combined cycle power plant using machine learning methods.
-\newblock \emph{International Journal of Electrical Power and Energy Systems},
+\newblock \emph{International Journal of Electrical Power \& Energy Systems},
   60:\penalty0 126--140, 2014.
+\newblock \doi{10.1016/j.ijepes.2014.02.027}.
 
 \bibitem[Bergstra \& Bengio(2012)Bergstra and Bengio]{bergstra2012}
 James Bergstra and Yoshua Bengio.
@@ -285,8 +287,8 @@ Pradeep Ravikumar, John Lafferty, Han Liu, and Larry Wasserman.
 \bibitem[Grinsztajn et~al.(2022)Grinsztajn, Oyallon, and
   Varoquaux]{grinsztajn2022tree}
 L{\'e}o Grinsztajn, Edouard Oyallon, and Ga{\"e}l Varoquaux.
-\newblock Why do tree-based models still outperform deep learning on tabular
-  data?
+\newblock Why do tree-based models still outperform deep learning on typical
+  tabular data?
 \newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
 
 \bibitem[Kolmogorov(1936)]{kolmogorov1936}
