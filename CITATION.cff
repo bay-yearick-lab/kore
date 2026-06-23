@@ -15,6 +15,6 @@ preferred-citation:
     - family-names: Yearick
       given-names: "Kathleen A."
   year: 2026
-  # Fill in once posted to arXiv:
-  # journal: "arXiv preprint arXiv:XXXX.XXXXX"
-  # doi: "10.48550/arXiv.XXXX.XXXXX"
+  journal: "arXiv preprint arXiv:2606.23575"
+  doi: "10.48550/arXiv.2606.23575"
+  url: "https://arxiv.org/abs/2606.23575"

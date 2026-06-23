@@ -2,7 +2,7 @@
   <h1 align="center">KORE</h1>
   <h3 align="center">Solve for the Hyperparameter, Skip the Search:<br>Kolmogorov-Optimal Scaling Laws for Spline Regression</h3>
   <p align="center">
-    <a href="https://arxiv.org/abs/XXXX.XXXXX"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg"></a>
+    <a href="https://arxiv.org/abs/2606.23575"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2606.23575-b31b1b.svg"></a>
     <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
     <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11+-blue.svg">
   </p>
@@ -194,9 +194,13 @@ data/                       OpenML/UCI dataset cache (gitignored).
 
 ```bibtex
 @article{bay2026kore,
-  title   = {Solve for the Hyperparameter, Skip the Search: Kolmogorov-Optimal Scaling Laws for Spline Regression},
-  author  = {Bay, Yong Yi and Yearick, Kathleen A.},
-  year    = {2026}
+  title         = {Solve for the Hyperparameter, Skip the Search: Kolmogorov-Optimal Scaling Laws for Spline Regression},
+  author        = {Bay, Yong Yi and Yearick, Kathleen A.},
+  year          = {2026},
+  eprint        = {2606.23575},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  doi           = {10.48550/arXiv.2606.23575}
 }
 ```
 
